@@ -39,6 +39,7 @@
 
 	<!-- Settings for Android-->
 	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
+		<AndroidEnableProfiler>true</AndroidEnableProfiler>
 		<AndroidPackageFormat>apk</AndroidPackageFormat>
 		<RuntimeIdentifier Condition="'$(Configuration)' == 'Release'">android-arm64</RuntimeIdentifier>
 	</PropertyGroup>
