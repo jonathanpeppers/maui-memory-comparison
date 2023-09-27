@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace maui_memory_comparison;
+namespace MemoryComparison;
 
 public class Program
 {

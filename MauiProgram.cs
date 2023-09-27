@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
 
-namespace maui_memory_comparison;
+namespace MemoryComparison;
 
 public static class MauiProgram
 {

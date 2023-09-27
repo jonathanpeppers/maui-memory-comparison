@@ -2,7 +2,7 @@ using System;
 using Microsoft.Maui;
 using Microsoft.Maui.Hosting;
 
-namespace maui_memory_comparison;
+namespace MemoryComparison;
 
 class Program : MauiApplication
 {

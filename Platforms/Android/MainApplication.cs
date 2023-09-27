@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace maui_memory_comparison;
+namespace MemoryComparison;
 
 [Application]
 public class MainApplication : MauiApplication

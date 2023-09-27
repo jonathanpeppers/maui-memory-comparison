@@ -1,4 +1,4 @@
-﻿namespace maui_memory_comparison;
+﻿namespace MemoryComparison;
 
 public partial class MainPage : ContentPage
 {

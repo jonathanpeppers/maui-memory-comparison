@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace maui_memory_comparison;
+namespace MemoryComparison;
 
 [Register("AppDelegate")]
 public class AppDelegate : MauiUIApplicationDelegate
