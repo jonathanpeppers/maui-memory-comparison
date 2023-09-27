@@ -39,7 +39,7 @@
 
 	<!-- Settings for Android-->
 	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">
-		<RuntimeIdentifer Condition="'$(Configuration)' == 'Release'">android-arm64</RuntimeIdentifer>
+		<RuntimeIdentifier Condition="'$(Configuration)' == 'Release'">android-arm64</RuntimeIdentifier>
 	</PropertyGroup>
 
 	<ItemGroup>
