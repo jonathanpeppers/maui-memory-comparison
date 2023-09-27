@@ -2,23 +2,28 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+	static int count = 1;
 
 	public MainPage()
 	{
 		InitializeComponent();
 	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
+	async void OnNavigateClicked(object sender, EventArgs e)
 	{
-		count++;
+		await Navigation.PushAsync(new MainPage
+		{
+			Title = $"Page #{++count}",
+		});
+	}
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+	protected override void OnAppearing()
+	{
+		base.OnAppearing();
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
+		// NOTE: This is just for testing purposes!
+		// Don't leave GC.Collect() calls in your production app
+		GC.Collect();
 	}
 }
 
