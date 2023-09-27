@@ -1,2 +1,3 @@
 # maui-memory-comparison
- Samples comparing memory usage .NET 7 vs .NET 8
+
+Samples comparing memory usage .NET 7 vs .NET 8.
