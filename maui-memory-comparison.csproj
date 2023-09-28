@@ -91,6 +91,6 @@
 
 	<PropertyGroup Condition="$(TargetFramework.Contains('-maccatalyst')) and '$(Configuration)' == 'Release'">
 		<CodesignEntitlements>Platforms/MacCatalyst/Entitlements.Release.plist</CodesignEntitlements>
-		<UseHardenedRuntime>true</UseHardenedRuntime>
+		<UseHardenedRuntime Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) == '8.0'">true</UseHardenedRuntime>
 	</PropertyGroup>
 </Project>
