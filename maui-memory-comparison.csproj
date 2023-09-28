@@ -34,11 +34,11 @@
 		<DisableTransitiveFrameworkReferenceDownloads>true</DisableTransitiveFrameworkReferenceDownloads>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) == 'net7.0'">
+	<PropertyGroup Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) == '7.0'">
 		<ApplicationTitle>.NET 7 Memory</ApplicationTitle>
 		<ApplicationId>com.microsoft.maui.memory.comparison.net7</ApplicationId>
 	</PropertyGroup>
-	<PropertyGroup Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) == 'net8.0'">
+	<PropertyGroup Condition="$([MSBuild]::GetTargetFrameworkVersion('$(TargetFramework)')) == '8.0'">
 		<ApplicationTitle>.NET 8 Memory</ApplicationTitle>
 		<ApplicationId>com.microsoft.maui.memory.comparison.net8</ApplicationId>
 	</PropertyGroup>
