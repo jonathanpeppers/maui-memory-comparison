@@ -2,7 +2,7 @@
 
 public partial class MainPage : ContentPage
 {
-	static int count = 1;
+	static int count = 0;
 
 	public MainPage()
 	{
@@ -15,7 +15,7 @@ public partial class MainPage : ContentPage
 	{
 		await Navigation.PushAsync(new MainPage
 		{
-			Title = $"Page #{++count}",
+			Title = $"Page #{count++}",
 		});
 	}
 
