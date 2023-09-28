@@ -23,7 +23,8 @@
 		<ApplicationTitle>Memory Comparison</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.microsoft.maui.memory.comparison</ApplicationId>
+		<ApplicationId Condition="$(TargetFramework.StartsWith('net7.0'))">com.microsoft.maui.memory.comparison.net7</ApplicationId>
+		<ApplicationId Condition="$(TargetFramework.StartsWith('net8.0'))">com.microsoft.maui.memory.comparison.net8</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>

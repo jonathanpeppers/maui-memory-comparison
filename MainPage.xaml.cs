@@ -7,6 +7,8 @@ public partial class MainPage : ContentPage
 	public MainPage()
 	{
 		InitializeComponent();
+
+		version.Text = $".NET {Environment.Version}";
 	}
 
 	async void OnNavigateClicked(object sender, EventArgs e)
