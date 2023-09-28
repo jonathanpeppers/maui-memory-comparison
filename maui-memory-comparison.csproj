@@ -50,6 +50,11 @@
 		<RuntimeIdentifier Condition="'$(Configuration)' == 'Release'">android-arm64</RuntimeIdentifier>
 	</PropertyGroup>
 
+	<!-- Settings for Catalyst -->
+	<PropertyGroup Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'macccatalyst'">
+		<RuntimeIdentifier Condition="'$(Configuration)' == 'Release'">maccatalyst-arm64</RuntimeIdentifier>
+	</PropertyGroup>
+
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
