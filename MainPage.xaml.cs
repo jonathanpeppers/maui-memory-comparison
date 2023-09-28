@@ -24,6 +24,10 @@ public partial class MainPage : ContentPage
 		// NOTE: This is just for testing purposes!
 		// Don't leave GC.Collect() calls in your production app
 		GC.Collect();
+
+		// forceFullCollection so we maybe run multiple GCs?
+		var total = GC.GetTotalMemory(forceFullCollection: true);
+		text.Text = $"Total Memory: {total}";
 	}
 }
 
