@@ -1,5 +1,4 @@
-﻿
-namespace MemoryComparison;
+﻿namespace MemoryComparison;
 
 public partial class App : Application
 {
