@@ -13,10 +13,14 @@ public partial class MainPage : ContentPage
 
 	async void OnNavigateClicked(object sender, EventArgs e)
 	{
-		await Navigation.PushAsync(new MainPage
+		for (int i = 0; i < 10; i++)
 		{
-			Title = $"Page #{count++}",
-		});
+			await Navigation.PushAsync(new MainPage
+			{
+				Title = $"Page #{count++}",
+			});
+		}
+		await Navigation.PopToRootAsync();
 	}
 
 	protected override void OnAppearing()
