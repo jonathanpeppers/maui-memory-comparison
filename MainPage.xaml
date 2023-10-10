@@ -24,6 +24,7 @@
             <Label
                 x:Name="text"
                 Text="Welcome to .NET Multi-platform App UI"
+                HorizontalTextAlignment="Center"
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I"
                 FontSize="18"

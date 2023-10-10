@@ -29,7 +29,7 @@ public partial class MainPage : ContentPage
 
 		// forceFullCollection so we maybe run multiple GCs?
 		var total = GC.GetTotalMemory(forceFullCollection: true);
-		text.Text = $"Total Memory: {total}";
+		text.Text = $"Total Memory:\n{total}";
 	}
 }
 
